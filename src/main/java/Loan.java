@@ -5,9 +5,14 @@ public class Loan {
     private double interestRate;
 
     static private double maxLoanAmount;
+    private static int maxLoanValue;
 
     public static double getMaxLoanAmount() {
         return maxLoanAmount;
+    }
+
+    public static int getMaxLoanValue() {
+        return maxLoanValue;
     }
 
     public Loan(String borrower, int amount, double interestRate) {
